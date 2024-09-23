@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="CGPA.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/pierce" type="text/css"/> 
+</head>
+<body>
+
+    <!-- Upper section to display previously calculated CGPA -->
+    <div class="container">
+      <h1>EKSU CGPA CALCULATOR</h1>
+        <div class="upper-section">
+            <h2>Previous CGPA Result</h2>
+            <ul id="cgpa-list">
+                <!-- Calculated CGPA will be displayed here -->
+            </ul>
+        </div>
+
+        <!-- Lower section to calculate the current CGPA -->
+        <div class="lower-section">
+            <h2>Current CGPA</h2>
+
+            <!-- Form for calculating CGPA -->
+            <form id="cgpa-form">
+                <div class="form-group">
+                    <label for="grades">Enter Grades for Courses (A-F):</label>
+                    <input type="text" id="grades" placeholder="e.g. A B C D E F" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="units">Enter Credit Units for Each Course </label>
+                    <input type="text" id="units" placeholder="e.g. 3 4 2 1 5" required>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="CGPA.js"></script>
+</body>
+</html>
